@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoPerm: Making your docs fast.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        h1 {
+            text-align: center;
+            padding: 20px 0;
+            color: #007bff; /* Blue header text */
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        
+        label {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        button[type="submit"],
+        button[type="reset"],
+        #download-pdf {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button[type="submit"]:hover,
+        button[type="reset"]:hover,
+        #download-pdf:hover {
+            background-color: #0056b3;
+        }
+        
+        #download-pdf {
+            background-color: #28a745; /* Green Download PDF button */
+        }
+
+        #download-pdf:hover {
+            background-color: #218838;
+        }
+
+        /* Table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>AutoPerm: Making your docs fast.</h1>
+    <div class="container">
+        <p>AutoPerm is a website that makes your documentation work automated and simple to use.</p>
+        <form id="permission-form" method="post" action="/generate_pdf">
+            <label><input type="checkbox" name="names" value="Akanksh M"><span>Akanksh M</span></label>
+            <label><input type="checkbox" name="names" value="Nidhin Paul"><span>Nidhin Paul</span></label>
+            <label><input type="checkbox" name="names" value="Steeve P P"><span>Steeve P P</span></label>
+            <label><input type="checkbox" name="names" value="Benjamin George"><span>Benjamin George</span></label>
+            <label><input type="checkbox" name="names" value="Shalom Mathew"><span>Shalom Mathew</span></label>
+            <label><input type="checkbox" name="names" value="Christine"><span>Christine</span></label>
+            <label><input type="checkbox" name="names" value="Chris Joseph George"><span>Chris Joseph George</span></label>
+            <label><input type="checkbox" name="names" value="Stephen Thomas"><span>Stephen Thomas</span></label>
+            <label><input type="checkbox" name="names" value="Aldrin G"><span>Aldrin G</span></label>
+            <label><input type="checkbox" name="names" value="Evalt D"><span>Evalt D</span></label>
+            <label><input type="checkbox" name="names" value="Anish Ramesh"><span>Anish Ramesh</span></label>
+            <label><input type="checkbox" name="names" value="Ishan Chaskar"><span>Ishan Chaskar</span></label>
+            <label><input type="checkbox" name="names" value="Reuben Reny"><span>Reuben Reny</span></label>
+            <label><input type="checkbox" name="names" value="Paul Isiah"><span>Paul Isiah</span></label>
+            <label><input type="checkbox" name="names" value="Kevin Jojo"><span>Kevin Jojo</span></label>
+            <label><input type="checkbox" name="names" value="Melvin Sajith"><span>Melvin Sajith</span></label>
+            <label><input type="checkbox" name="names" value="Razeek"><span>Razeek</span></label>
+            <label><input type="checkbox" name="names" value="Gifton Paul Immanuel"><span>Gifton Paul Immanuel</span></label>
+            <label><input type="checkbox" name="names" value="Fabine Bobby"><span>Fabine Bobby</span></label>
+
+            <button type="submit">Generate PDF</button>
+        </form>
+        
+        </div>
+</body>
+</html>
